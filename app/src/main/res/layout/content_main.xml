@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/agentimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="110dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_weight=".20"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+
+                    android:layout_marginRight="1dp"
+                    android:fadingEdgeLength="1dp"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_marginRight="10dp"
+                            android:clickable="true"
+                            android:onClick="navigate2"
+                            android:alpha=".90"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="#fa0a0a"
+                            android:layout_height="110dp">
+                            <ImageView
+                                android:src="@drawable/plans"
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+
+                                android:textColor="#ffff"
+                                android:text="Our \nPlans"
+                                android:layout_height="wrap_content" />
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_marginRight="10dp"
+                            android:clickable="true"
+                            android:onClick="navigate"
+                            android:alpha=".90"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="#f4c325"
+                            android:layout_height="110dp">
+
+                            <ImageView
+                                android:src="@drawable/calcy"
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+
+                                android:textColor="#ffff"
+                                android:text="Premium  \nCalculator"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_marginRight="10dp"
+                            android:alpha=".90"
+                            android:clickable="true"
+                            android:onClick="navigate3"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="#0322e9"
+                            android:layout_height="110dp">
+
+                            <ImageView
+                                android:src="@drawable/clinics"
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+
+                                android:textColor="#ffff"
+                                android:text="Network \nHospitals"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_marginRight="10dp"
+                            android:clickable="true"
+                            android:onClick="downloaddoc"
+                            android:alpha=".90"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="#04e2c5"
+                            android:layout_height="110dp">
+
+                            <ImageView
+                                android:src="@drawable/forms"
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+
+                                android:textColor="#ffff"
+                                android:text="Download Documents"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_marginRight="10dp"
+                            android:alpha=".90"
+                            android:clickable="true"
+                            android:onClick="navigate2"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="#2ac404"
+                            android:layout_height="110dp">
+
+                            <ImageView
+                                android:src="@drawable/location"
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+
+                                android:textColor="#ffff"
+                                android:text="Branch Location"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="110dp"
+                            android:layout_marginRight="10dp"
+                            android:alpha=".90"
+                            android:clickable="true"
+                            android:onClick="navigate2"
+                            android:orientation="vertical"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="#c908b2"
+                            android:layout_height="110dp">
+
+                            <ImageView
+                                android:src="@drawable/policydetails"
+
+                                android:layout_width="50dp"
+                                android:layout_height="50dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="16sp"
+                                android:textAlignment="center"
+
+                                android:textColor="#ffff"
+                                android:text="Policy \nDetails"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_plan"
+
+
+            android:icon="@drawable/plans"
+            android:title="Our Plans" />
+        <item
+            android:id="@+id/nav_calcy"
+            android:icon="@drawable/calcy"
+            android:title="Premium Calculator" />
+        <item
+            android:id="@+id/nav_details"
+            android:icon="@drawable/policydetails"
+            android:title="Policy Details" />
+        <item
+            android:id="@+id/nav_branch"
+            android:icon="@drawable/location"
+            android:title="Branch Locations" />
+        <item
+            android:id="@+id/nav_hospitals"
+            android:icon="@drawable/clinics"
+            android:title="Hospital Networks" />
+
+
+        <item
+            android:icon="@drawable/forms"
+            android:title="Download Documents" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share App" />
+    </group>
+
+
+
+</menu>

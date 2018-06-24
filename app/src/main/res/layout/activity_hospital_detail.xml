@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent"
+    tools:context=".HospitalDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#1684f2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+
+
+    </LinearLayout>
+
+
+
+<ScrollView
+    android:scrollbars="none"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Network Hospital Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+
+                    android:tint="#1684f2"
+                    android:textAlignment="center"
+                    android:src="@drawable/clinics"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp" />
+
+       <TextView
+           android:id="@+id/name"
+           android:text="Name"
+           android:textAllCaps="true"
+           android:textSize="16sp"
+           android:textAlignment="center"
+           android:focusable="false"
+           android:textStyle="bold"
+           android:textColor="#1684f2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/Address"
+            android:text="Address"
+            android:lines="3"
+            android:textSize="13sp"
+            android:focusable="false"
+            android:minLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/area"
+                    android:text="Area"
+                    android:textSize="13sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="City"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/city"
+                    android:text="City"
+                    android:textSize="13sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/state"
+                    android:text="State"
+                    android:textSize="13sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Contact Person Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/Contactperson"
+                    android:text="Person Name"
+                    android:textSize="13sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Contact Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/contnum"
+                    android:text="747384438938898483"
+                    android:textSize="13sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:text="Pin Code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/pin"
+                    android:text="110061"
+                    android:textSize="13sp"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1684f2"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+
+                    android:text="Premium Calculator"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+
+                android:layout_marginTop="-8dp"
+                
+
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:text="Policy Type"
+
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp"
+                        tools:typeface="monospace" />
+
+                    <Spinner
+                        android:id="@+id/spneer1"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight=".50"
+                        ></Spinner>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+
+
+                        android:text="Family Definition"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/spneer2"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="40sp"
+                        android:layout_weight=".50"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <Spinner
+                        android:id="@+id/myvalue"
+                        android:gravity="center"
+
+                    android:paddingRight="40dp"
+                        android:paddingLeft="40dp"
+                        android:layout_gravity="center"
+
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/background">
+
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:text="Select Zone"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight=".50"
+                        android:text="Policy Period"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp">
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <Spinner
+                        android:id="@+id/Zone"
+
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight=".50">
+
+                    </Spinner>
+
+                    <Spinner
+                        android:id="@+id/period"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight=".50">
+
+                    </Spinner>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".60"
+                        android:text="Policy Start date"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ageelder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".40"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+
+                        android:inputType="date"
+                        android:onClick="elderdate"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".60"
+                        android:text="Dob of Eldest Member"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/elderdate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".40"
+
+                        android:focusable="false"
+
+                        android:gravity="center"
+                        android:inputType="date"
+                        android:onClick="myclick"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line6"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".15"
+                        android:text="Age"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/elderage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".30"
+                        android:text="Age Band"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/elderband"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".40"
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/basicsum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/line6"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".60"
+                        android:gravity="right"
+                        android:textStyle="bold"
+                        android:text="Basic Premium"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/mybasic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".40"
+                        android:focusable="false"
+                        android:gravity="center"
+
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dependentdetails"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/basicsum"
+
+                android:layout_marginTop="5dp"
+                android:background="#1684f2"
+
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:textStyle="bold"
+
+                    android:layout_weight=".65"
+                    android:background="#1684f2"
+                    android:drawableRight="@android:drawable/arrow_down_float"
+                    android:onClick="clickme"
+                    android:text="Dependent Details"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout101"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/dependentdetails"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginStart="5dp">
+
+                <LinearLayout
+                    android:id="@+id/line77"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+                        android:text="Dob of Spouse"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/spousedate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:focusable="false"
+                        android:hint="dd-mm-yyyy"
+                        android:onClick="DobSpouse"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/spouseage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:id="@+id/spouseband"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line88"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line77"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+
+                        android:text="Dob of Child 1"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/dobc1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:focusable="false"
+                        android:hint="dd-mm-yyyy"
+                        android:onClick="Dobchield1"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/agec1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/bandc1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line99"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line88"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+
+                        android:text="Dob of Child 2"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/dobc2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:focusable="false"
+                        android:hint="dd-mm-yyyy"
+                        android:onClick="Dobchield2"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/agec2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/bandc2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/line99"
+
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+
+                        android:text="Dob of Child 3"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/dobc3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".30"
+                        android:focusable="false"
+                        android:hint="dd-mm-yyyy"
+                        android:onClick="Dobchield3"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/agec3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/band3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:focusable="false"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/Tp"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/line6"
+
+                android:layout_marginTop="10dp"
+                android:background="#1684f2"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".65"
+                    android:textStyle="bold"
+
+                    android:background="#1684f2"
+                    android:drawableRight="@android:drawable/arrow_down_float"
+                    android:onClick="clickme2"
+                    android:text="Add On Cover"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Tp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginStart="5dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/line7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+
+                        android:text="Hospital Cash"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/hospital_cash"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".40" />
+
+                    <EditText
+                        android:id="@+id/cash"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".25"
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:text="0.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line7"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+
+                        android:text="Maternity"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/maternity"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".40" />
+
+                    <EditText
+                        android:id="@+id/mater_nity"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:text="0.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/line9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line8"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".35"
+
+                        android:text="Crit Illness Self"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/criticalill"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".40"></Spinner>
+
+                    <EditText
+                        android:id="@+id/critic_self"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".25"
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:text="0.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line101"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line9"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+
+                        android:text="Crit Illness for Spouse"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/criticdep_1"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:paddingRight="40dp"></Switch>
+
+                    <EditText
+                        android:id="@+id/critic_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".25"
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:text="0.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line102"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line101"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+
+                        android:text="Crit Illness for Child 1"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/criticalill_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:paddingRight="40dp" />
+
+                    <EditText
+                        android:id="@+id/critic_Dep2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".25"
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:text="0.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line103"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line102"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:text="Crit Illness for Child 2"
+
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/criticalill_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".25"
+                        android:paddingRight="40dp" />
+
+                    <EditText
+                        android:id="@+id/critic_dep3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:text="0.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line104"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line103"
+
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:text="Crit Illness for Child 3"
+
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="16sp" />
+
+                    <Switch
+                        android:id="@+id/criticalill_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:paddingRight="40dp" />
+
+                    <EditText
+                        android:id="@+id/critic_dep4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight=".25"
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:text="0.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line104"
+
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".35"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#1684f2"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".40"
+                        android:text="Add on Total"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/addontotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+
+                        android:focusable="false"
+                        android:gravity="right"
+                        android:text="0.0"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:background="#1684f2"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#1684f2"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".30"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Premium"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".30"
+
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Gst(18%)"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".30"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Total"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-2dp"
+                    android:background="#1684f2"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+
+                    <TextView
+                        android:id="@+id/premium2"
+                        android:layout_width="0dp"
+                        android:layout_weight=".30"
+                        android:layout_height="30dp"
+
+                        android:gravity="center"
+
+                        android:textColor="#a6f962"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gst2"
+                        android:layout_width="0dp"
+                        android:layout_weight=".30"
+
+                        android:layout_height="30dp"
+                        android:gravity="right"
+
+                        android:textAlignment="center"
+                        android:textColor="#a6f962"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/total2"
+                        android:layout_width="0dp"
+                        android:layout_weight=".30"
+                        android:layout_height="30dp"
+                        android:gravity="right"
+
+                        android:textAlignment="center"
+                        android:textColor="#a6f962"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".50"
+                    android:layout_height="wrap_content"
+
+                     />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:gravity="right"
+                    android:onClick="send"
+                    android:text="SEND TO MAIL"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

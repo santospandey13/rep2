@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="slashtheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarWidgetTheme">@style/MyActionBarWidgetTheme</item>
+        <item name="colorPrimaryDark">#0266ca</item>
+        <item name="colorPrimary">#1684f2</item>
+        <item name="colorAccent">#1684f2</item>
+
+    </style>
+    <style name="MyActionBarWidgetTheme" parent="@android:style/Theme.Holo">
+        .....
+        .....
+        <item name="android:textColorHint">#fff</item>
+    </style>
+
+
+</resources>
